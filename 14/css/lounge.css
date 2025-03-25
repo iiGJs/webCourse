@@ -1,0 +1,32 @@
+h1, h2 {
+  color: red;
+}
+
+h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: maroon;
+}
+
+body {
+  font-family: Arial;
+}
+
+html{
+  font-size:16px;
+}
+
+body{
+	color: red;
+	color: rgb(192,72,81);
+	color: #4169E1CC;
+	color: rgba(39,177,182,0.8);
+	color: #2775b6CC;
+}
