@@ -10,6 +10,9 @@ body {
   font-size: 105%;
   padding: 15px;
   margin: 0px 330px 10px 10px;
+  position: relative;
+	top:           0px;
+	left:        200px;
 }
 
 .sidebar {
@@ -17,16 +20,6 @@ body {
   font-size: 105%;
   padding: 15px;
   margin: 0px 10px 10px 10px;
-}
-
-.footer {
-  background-color: #675c47;
-  color: #efe5d0;
-  text-align: center;
-  padding: 15px;
-  margin: 10px;
-  font-size: 90%;
-  clear: right;
 }
 
 h1 {
@@ -92,6 +85,7 @@ img {
   padding: 15px;
   margin: 10px;
   font-size: 90%;
+  clear: right;
 }
 
 h1 {
