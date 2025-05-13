@@ -1,0 +1,62 @@
+.body {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.news1,
+.news2,
+.news3 {
+  width: 325px;
+  height: 550px;
+  background-color: #0072ce;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.news1 > h1 {
+  margin-bottom: 50px;
+}
+
+.news1 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 2px;
+  top: 98px;
+  bottom: 0px;
+}
+
+.news2 > h1 {
+  margin-bottom: 50px;
+}
+
+.news2 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  top: 98px;
+}
+
+.news3 > h1 {
+  margin-bottom: 50px;
+}
+
+.news3 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  top: 98px;
+}
