@@ -1,0 +1,54 @@
+/* 标题样式 */
+.title {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 社交媒体图标容器样式 */
+.SocialMedia {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为20px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 社交媒体图标样式 */
+.SocialMedia > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+.SocialMedia > a > img:hover {
+  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */  
+}
+
+/* 第二组社交媒体图标容器样式 */
+.SocialMedia_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为20px */
+}
+
+/* 第二组社交媒体图标样式 */
+.SocialMedia_2 > a > img {
+  width: 130px; /* 宽度为130px */
+  height: 130px; /* 高度为130px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 15px; /* 圆角半径为15px */
+  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+.SocialMedia_2 > a > img:hover {
+  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
