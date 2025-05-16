@@ -21,13 +21,14 @@
   height: 130px; /* 高度为130px */
   object-fit: contain; /* 图片按比例缩放以适应容器 */
   border-radius: 15px; /* 圆角半径为15px */
-  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
 }
 
+/* 社交媒体图标悬停效果 */
 .SocialMedia > a > img:hover {
-  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
   transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
-  transition: all 0.3s ease; /* 添加过渡效果 */  
+  transition: all 0.3s ease; /* 添加过渡效果 */
 }
 
 /* 第二组社交媒体图标容器样式 */
@@ -36,6 +37,7 @@
   justify-content: center; /* 内容水平居中对齐 */
   align-items: center; /* 内容垂直居中对齐 */
   gap: 30px; /* 子元素之间的间距为20px */
+  margin-bottom: 84px; /* 底部外边距为84px */
 }
 
 /* 第二组社交媒体图标样式 */
@@ -44,11 +46,99 @@
   height: 130px; /* 高度为130px */
   object-fit: contain; /* 图片按比例缩放以适应容器 */
   border-radius: 15px; /* 圆角半径为15px */
-  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
 }
 
+/* 第二组社交媒体图标悬停效果 */
 .SocialMedia_2 > a > img:hover {
-  box-shadow:rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
   transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
   transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二个标题样式 */
+.title_2 {
+  text-align: center; /* 文本居中对齐 */
+  font-size: 175%; /* 字体大小为175% */
+  font-weight: 450; /* 字体粗细为450 */
+  margin-bottom: 80px; /* 底部外边距为80px */
+}
+
+/* 促销图片容器样式 */
+.sale {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为20px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 促销图片样式 */
+.sale > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 促销图片悬停效果 */
+.sale > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 第二组促销图片容器样式 */
+.sale_2 {
+  display: flex; /* 使用flex布局 */
+  justify-content: center; /* 内容水平居中对齐 */
+  align-items: center; /* 内容垂直居中对齐 */
+  gap: 30px; /* 子元素之间的间距为20px */
+  margin-bottom: 30px; /* 底部外边距为30px */
+}
+
+/* 第二组促销图片样式 */
+.sale_2 > a > img {
+  width: 560px; /* 宽度为560px */
+  height: 315px; /* 高度为315px */
+  object-fit: contain; /* 图片按比例缩放以适应容器 */
+  border-radius: 17px; /* 圆角半径为17px */
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+}
+
+/* 第二组促销图片悬停效果 */
+.sale_2 > a > img:hover {
+  box-shadow: rgb(175, 174, 174) 0px 0px 10px 0px; /* 添加灰色阴影效果 */
+  transform: scale(1.02); /* 鼠标悬停时放大1.02倍 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+/* 底部内容段落样式 */
+.footer-content > p {
+  margin-left: 7%; /* 与 .MARVEL 的 left 对齐 */
+  margin-top: 1px; /* 调整顶部外边距以缩短段落间距 */
+  margin-bottom: 1px; /* 调整顶部外边距以缩短段落间距 */
+}
+
+/* MARVEL 图片样式 */
+.MARVEL {
+  margin-top: 100px; /* 顶部外边距为100px */
+  margin-bottom: 40px; /* 底部外边距为40px */
+  width: 175px; /* 宽度为175px */
+  height: 66px; /* 高度为66px */
+  position: relative; /* 定位方式为相对定位 */
+  left: 7%; /* 距离左侧7% */
+  top: 110%; /* 距离顶部110% */
+}
+
+/* 第一个 MARVEL 相关内容样式 */
+.MARVEL_content_first {
+  margin-top: 50px; /* 顶部外边距为50px */
+}
+
+.footer{
+  background-color: #0072CE;
+  /* width: 1517px;
+  height: 630px; */
 }
