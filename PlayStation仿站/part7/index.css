@@ -1,3 +1,11 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 /* 标题样式 */
 .title {
   text-align: center; /* 文本居中对齐 */
@@ -137,8 +145,57 @@
   margin-top: 50px; /* 顶部外边距为50px */
 }
 
-.footer{
-  background-color: #0072CE;
-  /* width: 1517px;
-  height: 630px; */
+.footer {
+  background-color: #0053a0;
+  width: 100%;
+  color: white;
+}
+
+.centered-line {
+  border: none; /* 移除默认边框 */
+  height: 2px; /* 设置高度 */
+  background-color: rgba(197, 186, 186, 0.257); /* 设置颜色 */
+  margin: 20px auto; /* 设置上下外边距并水平居中 */
+  width: 91%; /* 设置宽度 */
+}
+
+/* Align direct children of footer with the start of the centered hr */
+.footer > section,
+.jump,
+.trademark {
+  margin-left: 4.5%; /* Align with the left edge of the centered hr */
+  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */
+  width: calc(100% - 9%); /* Optional: Set width to match hr's width */
+}
+
+.jump {
+  display: flex;
+  gap: 125px; /* 你可以根据需要调整这个值 */
+  margin-left: 4.5%; /* Align with the left edge of the centered hr */
+  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */
+  width: calc(100% - 9%); /* Optional: Set width to match hr's width */
+}
+
+.jump_list ul {
+  list-style: none; /* 移除列表默认的圆点 */
+  padding: 0; /* 移除列表默认的内边距 */
+  margin: 0; /* 移除列表默认的外边距 */
+}
+
+.jump_list li {
+  display: block; /* 确保列表项是块级元素，竖向排列 */
+  margin-bottom: 3px; /* 在列表项之间添加一些垂直间距 */
+}
+
+.jump a {
+  text-decoration: none; /* 移除超链接下划线 */
+  color: white; /* 设置超链接文本颜色为白色 */
+}
+
+.trademark_content_first {
+  margin-bottom: 0px;
+}
+
+.trademark_content {
+  margin-top: 0px;
 }
