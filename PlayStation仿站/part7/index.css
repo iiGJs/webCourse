@@ -1,9 +1,10 @@
+/* body和html元素的通用样式 */
 body,
 html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
+  margin: 0; /* 移除默认外边距 */
+  padding: 0; /* 移除默认内边距 */
+  width: 100%; /* 设置宽度为100% */
+  overflow-x: hidden; /* 隐藏水平滚动条 */
 }
 
 /* 标题样式 */
@@ -143,59 +144,184 @@ html {
 /* 第一个 MARVEL 相关内容样式 */
 .MARVEL_content_first {
   margin-top: 50px; /* 顶部外边距为50px */
+  font-size: smaller; /* 字体大小 */
+  margin-bottom: 100px; /* 底部外边距 */
 }
 
+/* 底部内容容器样式 */
+.footer-content {
+  margin-bottom: 100px; /* 底部外边距 */
+}
+
+/* 底部区域样式 */
 .footer {
-  background-color: #0053a0;
-  width: 100%;
-  color: white;
+  background-color: #194296; /* 背景颜色 */
+  width: 100%; /* 宽度为100% */
+  color: white; /* 文本颜色为白色 */
 }
 
+/* 居中分割线样式 */
 .centered-line {
   border: none; /* 移除默认边框 */
   height: 2px; /* 设置高度 */
   background-color: rgba(197, 186, 186, 0.257); /* 设置颜色 */
   margin: 20px auto; /* 设置上下外边距并水平居中 */
   width: 91%; /* 设置宽度 */
+  margin-top: 0px; /* 顶部外边距 */
 }
 
-/* Align direct children of footer with the start of the centered hr */
+/* Align direct children of footer with the start and end of the centered hr */
+/* 使footer的直接子元素（section, jump, trademark, jump_last）与居中hr的起始和结束位置对齐 */
 .footer > section,
 .jump,
-.trademark {
-  margin-left: 4.5%; /* Align with the left edge of the centered hr */
-  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */
-  width: calc(100% - 9%); /* Optional: Set width to match hr's width */
+.trademark,
+.jump_last { /* Add .jump_last here */
+  margin-left: 4.5%; /* 与居中hr的左边缘对齐 */
+  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */ /* 可选：添加右外边距以保持一致性，或使用宽度 */
+  width: calc(100% - 9%); /* Optional: Set width to match hr's width */ /* 可选：设置宽度以匹配hr的宽度 */
 }
 
+/* jump区域样式 */
 .jump {
-  display: flex;
-  gap: 125px; /* 你可以根据需要调整这个值 */
-  margin-left: 4.5%; /* Align with the left edge of the centered hr */
-  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */
-  width: calc(100% - 9%); /* Optional: Set width to match hr's width */
+  display: flex; /* 使用flex布局 */
+  gap: 125px; /* 你可以根据需要调整这个值 */ /* 子元素之间的间距 */
+  /* margin-left: 4.5%; /* These are now handled by the combined rule above */ /* 这些现在由上面的组合规则处理 */
+  /* margin-right: 4.5%; */
+  /* width: calc(100% - 9%); */
+  margin-bottom: 10px; /* 底部外边距 */
 }
 
+/* jump_list ul样式 */
 .jump_list ul {
   list-style: none; /* 移除列表默认的圆点 */
   padding: 0; /* 移除列表默认的内边距 */
   margin: 0; /* 移除列表默认的外边距 */
 }
 
+/* jump_list li样式 */
 .jump_list li {
-  display: block; /* 确保列表项是块级元素，竖向排列 */
-  margin-bottom: 3px; /* 在列表项之间添加一些垂直间距 */
+  display: inline-block; /* 行内块显示 */
+  margin-right: 20px; /* 可选：添加右侧间距 */
 }
 
+/* jump区域超链接样式 */
 .jump a {
   text-decoration: none; /* 移除超链接下划线 */
   color: white; /* 设置超链接文本颜色为白色 */
 }
 
-.trademark_content_first {
-  margin-bottom: 0px;
+/* jump_list超链接悬停效果 */
+.jump_list a:hover {
+  /* 修改选择器，直接针对 .jump_list 下的 a 标签 */ /* 修改选择器，直接针对 .jump_list 下的 a 标签 */
+  color: grey; /* 悬停时文本颜色变为灰色 */
 }
 
+/* trademark_content_first样式 */
+.trademark_content_first {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* trademark_content样式 */
 .trademark_content {
-  margin-top: 0px;
+  margin-top: 0px; /* 顶部外边距 */
+}
+
+/* trademark图片样式 */
+.trademark img {
+  width: 370px; /* 容器宽度 */
+  height: 130px; /* 容器高度 */
+}
+
+/* PlayStation Logo容器样式 */
+.PlayStation_Logo {
+  width: 280px; /* 容器宽度 */
+  height: 65px; /* 容器高度 */
+  margin-top: 12px; /* 顶部外边距 */
+  margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* PlayStation Logo图片样式 */
+.PlayStation_Logo img {
+  width: 100%; /* 让图片宽度填充其父容器 */
+  height: 100%; /* 让图片高度填充其父容器 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* language图片样式 */
+.language img {
+  width: 25px; /* 容器宽度 */
+  height: 27px; /* 容器高度 */
+  margin-left: 75px; /* 左外边距 */
+}
+
+/* detailed超链接样式 */
+.detailed {
+  color: white; /* 设置文本颜色为白色 */
+}
+
+/* detailed超链接悬停效果 */
+.detailed a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* language区域样式 */
+.language {
+  position: relative; /* 相对定位 */
+  background-color: #194296; /* 背景颜色 */
+}
+
+/* language区域超链接样式 */
+.language > a {
+  position: absolute; /* 绝对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 110px; /* 左侧偏移 */
+  text-decoration: none; /* 移除下划线 */
+  color: white; /* 文本颜色为白色 */
+}
+
+/* language区域超链接内部p标签样式 */
+.language > a > p {
+  margin-bottom: 0px; /* 底部外边距 */
+}
+
+/* jump_last区域超链接样式 */
+.jump_last a {
+  text-decoration: none; /* 移除下划线 */
+  color: white; /* 文本颜色为白色 */
+  /* float: right; /* 如果需要保持右对齐，可以保留 */ /* 如果需要保持右对齐，可以保留 */
+  padding-right: 10px; /* 在竖线和文本之间添加一些间距 */
+  margin-right: 10px; /* 在竖线和下一个元素之间添加一些间距 */
+  border-right: 1px solid white; /* 添加右侧竖线 */
+}
+
+/* jump_last区域最后一个超链接样式 */
+.jump_last a:last-child {
+  border-right: none; /* 移除最后一个元素的右侧竖线 */
+  padding-right: 0; /* 移除最后一个元素的右侧填充 */
+  margin-right: 0; /* 移除最后一个元素的右侧外边距 */
+}
+
+/* jump_last区域直接子元素a标签样式 */
+.jump_last > a {
+  position: relative; /* 相对定位 */
+  top: -16px; /* 顶部偏移 */
+  left: 810px; /* 左侧偏移 */
+}
+
+/* jump_last超链接悬停效果 */
+.jump_last a:hover {
+  color: grey; /* 悬停时文本颜色变为灰色 */
+}
+
+/* jump_6区域jump_list图片样式 */
+.jump_6 .jump_list img {
+  /* 针对 jump_6 中的图片 */ /* 针对 jump_6 中的图片 */
+  width: 30px; /* 设置图片宽度 */
+  height: 30px; /* 设置图片高度 */
+  object-fit: contain; /* 保持图片比例 */
+}
+
+/* jump6区域jump_list样式 */
+.jump6 > .jump_list {
+  display: inline-block; /* 行内块显示 */
 }
