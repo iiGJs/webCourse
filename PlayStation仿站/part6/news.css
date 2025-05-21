@@ -1,0 +1,86 @@
+body {
+  /* 修改这里的 .body 为 body */
+  font-style: normal;
+  display: flex; /* 新增 */
+  justify-content: center; /* 新增 */
+  align-items: center; /* 新增 */
+  min-height: 100vh; /* 新增 */
+  margin: 0; /* 新增，移除默认边距 */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.news_header {
+  display: flex;
+  gap: 20px; /* 在每个div之间添加20px的间距 */
+}
+
+.news1,
+.news2,
+.news3 {
+  width: 360px;
+  height: 550px;
+  background-color: rgba(0, 100, 183,1);
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.news1 > h1 {
+  margin-bottom: 50px;
+}
+
+.news1 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  left: 2px;
+  top: 71px;
+  bottom: 0px;
+}
+
+.news2 > h1 {
+  margin-bottom: 50px;
+}
+
+.news2 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  top: 73px;
+}
+
+.news3 > h1 {
+  margin-bottom: 50px;
+}
+
+.news3 > img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  top: 72px;
+}
+
+.link-with-arrow {
+  display: inline-flex; /* 让文字和箭头在一行居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  text-decoration: none; /* 移除默认的下划线 */
+  color: white; /* 示例颜色 */
+}
+
+.link-with-arrow::after {
+  content: "\003E"; /* Unicode 字符 > */
+  margin-left: 5px; /* 箭头和文字之间的间距 */
+  font-size: 1em; /* 调整箭头大小 */
+}
