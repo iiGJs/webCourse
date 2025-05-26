@@ -20,7 +20,7 @@ html {
   display: flex; /* 使用flex布局 */
   justify-content: center; /* 内容水平居中对齐 */
   align-items: center; /* 内容垂直居中对齐 */
-  gap: 30px; /* 子元素之间的间距为20px */
+  gap: 30px; /* 子元素之间的间距为30px */
   margin-bottom: 30px; /* 底部外边距为30px */
 }
 
@@ -45,7 +45,7 @@ html {
   display: flex; /* 使用flex布局 */
   justify-content: center; /* 内容水平居中对齐 */
   align-items: center; /* 内容垂直居中对齐 */
-  gap: 30px; /* 子元素之间的间距为20px */
+  gap: 30px; /* 子元素之间的间距为30px */
   margin-bottom: 84px; /* 底部外边距为84px */
 }
 
@@ -78,7 +78,7 @@ html {
   display: flex; /* 使用flex布局 */
   justify-content: center; /* 内容水平居中对齐 */
   align-items: center; /* 内容垂直居中对齐 */
-  gap: 30px; /* 子元素之间的间距为20px */
+  gap: 30px; /* 子元素之间的间距为30px */
   margin-bottom: 30px; /* 底部外边距为30px */
 }
 
@@ -103,7 +103,7 @@ html {
   display: flex; /* 使用flex布局 */
   justify-content: center; /* 内容水平居中对齐 */
   align-items: center; /* 内容垂直居中对齐 */
-  gap: 30px; /* 子元素之间的间距为20px */
+  gap: 30px; /* 子元素之间的间距为30px */
   margin-bottom: 30px; /* 底部外边距为30px */
 }
 
@@ -130,7 +130,7 @@ html {
   margin-bottom: 1px; /* 调整顶部外边距以缩短段落间距 */
 }
 
-/* MARVEL 图片样式 */
+/* MARVEL 图片容器样式 */
 .MARVEL {
   margin-top: 100px; /* 顶部外边距为100px */
   margin-bottom: 40px; /* 底部外边距为40px */
@@ -170,22 +170,21 @@ html {
   margin-top: 0px; /* 顶部外边距 */
 }
 
-/* Align direct children of footer with the start and end of the centered hr */
 /* 使footer的直接子元素（section, jump, trademark, jump_last）与居中hr的起始和结束位置对齐 */
 .footer > section,
 .jump,
 .trademark,
 .jump_last { /* Add .jump_last here */
   margin-left: 4.5%; /* 与居中hr的左边缘对齐 */
-  margin-right: 4.5%; /* Optional: Add right margin for consistency, or use width */ /* 可选：添加右外边距以保持一致性，或使用宽度 */
-  width: calc(100% - 9%); /* Optional: Set width to match hr's width */ /* 可选：设置宽度以匹配hr的宽度 */
+  margin-right: 4.5%; /* 可选：添加右外边距以保持一致性，或使用宽度 */
+  width: calc(100% - 9%); /* 可选：设置宽度以匹配hr的宽度 */
 }
 
 /* jump区域样式 */
 .jump {
   display: flex; /* 使用flex布局 */
-  gap: 125px; /* 你可以根据需要调整这个值 */ /* 子元素之间的间距 */
-  /* margin-left: 4.5%; /* These are now handled by the combined rule above */ /* 这些现在由上面的组合规则处理 */
+  gap: 125px; /* 子元素之间的间距 */
+  /* margin-left: 4.5%; /* These are now handled by the combined rule above */
   /* margin-right: 4.5%; */
   /* width: calc(100% - 9%); */
   margin-bottom: 10px; /* 底部外边距 */
@@ -212,7 +211,7 @@ html {
 
 /* jump_list超链接悬停效果 */
 .jump_list a:hover {
-  /* 修改选择器，直接针对 .jump_list 下的 a 标签 */ /* 修改选择器，直接针对 .jump_list 下的 a 标签 */
+  /* 修改选择器，直接针对 .jump_list 下的 a 标签 */
   color: grey; /* 悬停时文本颜色变为灰色 */
 }
 
@@ -288,7 +287,7 @@ html {
 .jump_last a {
   text-decoration: none; /* 移除下划线 */
   color: white; /* 文本颜色为白色 */
-  /* float: right; /* 如果需要保持右对齐，可以保留 */ /* 如果需要保持右对齐，可以保留 */
+  /* float: right; /* 如果需要保持右对齐，可以保留 */
   padding-right: 10px; /* 在竖线和文本之间添加一些间距 */
   margin-right: 10px; /* 在竖线和下一个元素之间添加一些间距 */
   border-right: 1px solid white; /* 添加右侧竖线 */
@@ -315,7 +314,7 @@ html {
 
 /* jump_6区域jump_list图片样式 */
 .jump_6 .jump_list img {
-  /* 针对 jump_6 中的图片 */ /* 针对 jump_6 中的图片 */
+  /* 针对 jump_6 中的图片 */
   width: 30px; /* 设置图片宽度 */
   height: 30px; /* 设置图片高度 */
   object-fit: contain; /* 保持图片比例 */
